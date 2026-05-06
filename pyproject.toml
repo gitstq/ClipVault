@@ -1,0 +1,47 @@
+# ClipVault - Lightweight Cross-Platform Clipboard Intelligent Management Engine CLI
+# 轻量级跨平台剪贴板智能管理引擎 CLI
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "clipvault"
+version = "1.0.0"
+description = "📋 Lightweight Cross-Platform Clipboard Intelligent Management Engine CLI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "ClipVault Team"}
+]
+keywords = ["clipboard", "manager", "cli", "tui", "terminal", "productivity"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+    "Topic :: Desktop Environment",
+]
+
+[project.scripts]
+clipvault = "clipvault.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/ClipVault"
+Repository = "https://github.com/gitstq/ClipVault"
+Issues = "https://github.com/gitstq/ClipVault/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+clipvault = ["py.typed"]
